@@ -1,0 +1,1129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{85B7DFC6-7E91-4237-9F18-8F4D918D71E1}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Darla.UWP</RootNamespace>
+    <AssemblyName>Darla.UWP</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.19041.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WindowsXamlEnableOverview>true</WindowsXamlEnableOverview>
+    <AppxPackageSigningEnabled>false</AppxPackageSigningEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM64'">
+    <OutputPath>bin\ARM64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\Category.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Icons\UI\Certificates\level0Small.png" />
+    <Content Include="Assets\Icons\UI\Certificates\level1Small.png" />
+    <Content Include="Assets\Icons\UI\Certificates\level2Small.png" />
+    <Content Include="Assets\Icons\UI\Certificates\level3Small.png" />
+    <Content Include="Assets\Icons\UI\Certificates\level4Small.png" />
+    <Content Include="Assets\Icons\UI\Certificates\level5Small.png" />
+    <Content Include="Assets\Icons\UI\Crimewatch\booster.png" />
+    <Content Include="Assets\Icons\UI\Crimewatch\Crimewatch_Combat.png" />
+    <Content Include="Assets\Icons\UI\Crimewatch\Crimewatch_Combat_Small.png" />
+    <Content Include="Assets\Icons\UI\Crimewatch\Crimewatch_JumpActivation.png" />
+    <Content Include="Assets\Icons\UI\Crimewatch\Crimewatch_JumpFatigue.png" />
+    <Content Include="Assets\Icons\UI\Crimewatch\Crimewatch_LimitedEngagement.png" />
+    <Content Include="Assets\Icons\UI\Crimewatch\Crimewatch_LimitedEngagement_64.png" />
+    <Content Include="Assets\Icons\UI\Crimewatch\Crimewatch_Locked.png" />
+    <Content Include="Assets\Icons\UI\Crimewatch\Crimewatch_Locked_Small.png" />
+    <Content Include="Assets\Icons\UI\Crimewatch\Crimewatch_SuspectCriminal.png" />
+    <Content Include="Assets\Icons\UI\Crimewatch\Crimewatch_SuspectCriminal.ZH.png" />
+    <Content Include="Assets\Icons\UI\Crimewatch\Crimewatch_SuspectCriminal_Small.png" />
+    <Content Include="Assets\Icons\UI\Crimewatch\Crimewatch_SuspectCriminal_Small.ZH.png" />
+    <Content Include="Assets\Icons\UI\Crimewatch\Crimewatch_TimerCircle.png" />
+    <Content Include="Assets\Icons\UI\Crimewatch\Crimewatch_TimerHalfCircle.png" />
+    <Content Include="Assets\Icons\UI\Crimewatch\Crimewatch_TimerPoint.png" />
+    <Content Include="Assets\Icons\UI\Crimewatch\Crimewatch_TimerPoint_WithShadow.png" />
+    <Content Include="Assets\Icons\UI\Crimewatch\Crimewatch_WarpTimer.png" />
+    <Content Include="Assets\Icons\UI\Crimewatch\Crimewatch_WarpTimer_Small.png" />
+    <Content Include="Assets\Icons\UI\Crimewatch\deadspace.png" />
+    <Content Include="Assets\Icons\UI\Crimewatch\invulnerable.png" />
+    <Content Include="Assets\Icons\UI\Crimewatch\jump_cloak.png" />
+    <Content Include="Assets\Icons\UI\Crimewatch\SafetyButton_Default.png" />
+    <Content Include="Assets\Icons\UI\Crimewatch\SafetyButton_Highlight.png" />
+    <Content Include="Assets\Icons\UI\Crimewatch\Safety_Selection.png" />
+    <Content Include="Assets\Icons\UI\Crimewatch\softPenalty.png" />
+    <Content Include="Assets\Icons\UI\Crimewatch\softPenaltyTimer.png" />
+    <Content Include="Assets\Icons\UI\Fitting\checkSmall.png" />
+    <Content Include="Assets\Icons\UI\Fitting\filterIconDrones.png" />
+    <Content Include="Assets\Icons\UI\Fitting\filterIconHighSlot.png" />
+    <Content Include="Assets\Icons\UI\Fitting\filterIconHighSlot_32.png" />
+    <Content Include="Assets\Icons\UI\Fitting\filterIconLowSlot.png" />
+    <Content Include="Assets\Icons\UI\Fitting\filterIconLowSlot_32.png" />
+    <Content Include="Assets\Icons\UI\Fitting\filterIconMediumSlot.png" />
+    <Content Include="Assets\Icons\UI\Fitting\filterIconMediumSlot_32.png" />
+    <Content Include="Assets\Icons\UI\Fitting\filterIconResources.png" />
+    <Content Include="Assets\Icons\UI\Fitting\filterIconRigSlot.png" />
+    <Content Include="Assets\Icons\UI\Fitting\filterIconSkills.png" />
+    <Content Include="Assets\Icons\UI\Fitting\fittingbase.png" />
+    <Content Include="Assets\Icons\UI\Fitting\fittingbase_basecircle.png" />
+    <Content Include="Assets\Icons\UI\Fitting\fittingbase_dotproduct.png" />
+    <Content Include="Assets\Icons\UI\Fitting\fittingbase_gauge.png" />
+    <Content Include="Assets\Icons\UI\Fitting\fittingbase_overlay.png" />
+    <Content Include="Assets\Icons\UI\Fitting\fittingStencil.png" />
+    <Content Include="Assets\Icons\UI\Fitting\iconCommunityFitsSmall.png" />
+    <Content Include="Assets\Icons\UI\Fitting\iconLauncherHardpoint.png" />
+    <Content Include="Assets\Icons\UI\Fitting\iconSimulatorExit.png" />
+    <Content Include="Assets\Icons\UI\Fitting\iconSimulatorExitHover.png" />
+    <Content Include="Assets\Icons\UI\Fitting\iconSimulatorHover.png" />
+    <Content Include="Assets\Icons\UI\Fitting\iconSimulatorToggle.png" />
+    <Content Include="Assets\Icons\UI\Fitting\iconTurretHardpoint.png" />
+    <Content Include="Assets\Icons\UI\Fitting\moduleFrame.png" />
+    <Content Include="Assets\Icons\UI\Fitting\moduleFrameDots.png" />
+    <Content Include="Assets\Icons\UI\Fitting\moduleSlotFill.png" />
+    <Content Include="Assets\Icons\UI\Fitting\serviceSlotGlowOuter2.png" />
+    <Content Include="Assets\Icons\UI\Fitting\simBoxOverlay.png" />
+    <Content Include="Assets\Icons\UI\Fitting\simEdgeDecoration.png" />
+    <Content Include="Assets\Icons\UI\Fitting\simEdgeDecorationFrame.png" />
+    <Content Include="Assets\Icons\UI\Fitting\simExitOverlay.png" />
+    <Content Include="Assets\Icons\UI\Fitting\simGridBack.png" />
+    <Content Include="Assets\Icons\UI\Fitting\slotActive.png" />
+    <Content Include="Assets\Icons\UI\Fitting\slotActive_Small.png" />
+    <Content Include="Assets\Icons\UI\Fitting\slotLeft.png" />
+    <Content Include="Assets\Icons\UI\Fitting\slotOverheated.png" />
+    <Content Include="Assets\Icons\UI\Fitting\slotOverheated_Small.png" />
+    <Content Include="Assets\Icons\UI\Fitting\slotPassive.png" />
+    <Content Include="Assets\Icons\UI\Fitting\slotPassive_Small.png" />
+    <Content Include="Assets\Icons\UI\Fitting\slotTaken.png" />
+    <Content Include="Assets\Icons\UI\Fitting\stationServiceSlot.png" />
+    <Content Include="Assets\Icons\UI\Fitting\stationServiceSlotFrame.png" />
+    <Content Include="Assets\Icons\UI\Fitting\tabCommunityFits.png" />
+    <Content Include="Assets\Icons\UI\Fitting\tabFitting.png" />
+    <Content Include="Assets\Icons\UI\Fitting\tabFittings.png" />
+    <Content Include="Assets\Icons\UI\Fitting\tabHardware.png" />
+    <Content Include="Assets\Icons\UI\Fitting\tabSkins.png" />
+    <Content Include="Assets\Icons\UI\FlagIcons\1.png" />
+    <Content Include="Assets\Icons\UI\FlagIcons\10.png" />
+    <Content Include="Assets\Icons\UI\FlagIcons\2.png" />
+    <Content Include="Assets\Icons\UI\FlagIcons\3.png" />
+    <Content Include="Assets\Icons\UI\FlagIcons\4.png" />
+    <Content Include="Assets\Icons\UI\FlagIcons\5.png" />
+    <Content Include="Assets\Icons\UI\FlagIcons\6.png" />
+    <Content Include="Assets\Icons\UI\FlagIcons\6.zh.png" />
+    <Content Include="Assets\Icons\UI\FlagIcons\7.png" />
+    <Content Include="Assets\Icons\UI\FlagIcons\8.png" />
+    <Content Include="Assets\Icons\UI\FlagIcons\9.png" />
+    <Content Include="Assets\Icons\UI\Hacking\boardBg.png" />
+    <Content Include="Assets\Icons\UI\Hacking\coherence.png" />
+    <Content Include="Assets\Icons\UI\Hacking\coreHigh.png" />
+    <Content Include="Assets\Icons\UI\Hacking\coreLow.png" />
+    <Content Include="Assets\Icons\UI\Hacking\coreMedium.png" />
+    <Content Include="Assets\Icons\UI\Hacking\defSoftAntiVirus.png" />
+    <Content Include="Assets\Icons\UI\Hacking\defSoftFirewall.png" />
+    <Content Include="Assets\Icons\UI\Hacking\defSoftHoneyPotHealing.png" />
+    <Content Include="Assets\Icons\UI\Hacking\defSoftHoneyPotStrength.png" />
+    <Content Include="Assets\Icons\UI\Hacking\defSoftIds.png" />
+    <Content Include="Assets\Icons\UI\Hacking\healRing1.png" />
+    <Content Include="Assets\Icons\UI\Hacking\healRing2.png" />
+    <Content Include="Assets\Icons\UI\Hacking\hudBarFill.png" />
+    <Content Include="Assets\Icons\UI\Hacking\hudBarFillMirrored.png" />
+    <Content Include="Assets\Icons\UI\Hacking\hudBarStripes.png" />
+    <Content Include="Assets\Icons\UI\Hacking\hudBarStripesMirrored.png" />
+    <Content Include="Assets\Icons\UI\Hacking\hudBG.png" />
+    <Content Include="Assets\Icons\UI\Hacking\hudIcon.png" />
+    <Content Include="Assets\Icons\UI\Hacking\hudIconBG.png" />
+    <Content Include="Assets\Icons\UI\Hacking\hudNoise1.png" />
+    <Content Include="Assets\Icons\UI\Hacking\hudNoise2.png" />
+    <Content Include="Assets\Icons\UI\Hacking\hudNoise3.png" />
+    <Content Include="Assets\Icons\UI\Hacking\hudNoise4.png" />
+    <Content Include="Assets\Icons\UI\Hacking\iconBg.png" />
+    <Content Include="Assets\Icons\UI\Hacking\infected1.png" />
+    <Content Include="Assets\Icons\UI\Hacking\infected2.png" />
+    <Content Include="Assets\Icons\UI\Hacking\infected3.png" />
+    <Content Include="Assets\Icons\UI\Hacking\infected4.png" />
+    <Content Include="Assets\Icons\UI\Hacking\strength.png" />
+    <Content Include="Assets\Icons\UI\Hacking\tile.png" />
+    <Content Include="Assets\Icons\UI\Hacking\tileBlocked.png" />
+    <Content Include="Assets\Icons\UI\Hacking\tileDataCache.png" />
+    <Content Include="Assets\Icons\UI\Hacking\tileExplored.png" />
+    <Content Include="Assets\Icons\UI\Hacking\tileFrame.png" />
+    <Content Include="Assets\Icons\UI\Hacking\tileHover.png" />
+    <Content Include="Assets\Icons\UI\Hacking\tileIconFrame.png" />
+    <Content Include="Assets\Icons\UI\Hacking\tileUnflipped.png" />
+    <Content Include="Assets\Icons\UI\Hacking\utilKernalRot.png" />
+    <Content Include="Assets\Icons\UI\Hacking\utilPolymorphShield.png" />
+    <Content Include="Assets\Icons\UI\Hacking\utilSecondVector.png" />
+    <Content Include="Assets\Icons\UI\Hacking\utilSelfRepair.png" />
+    <Content Include="Assets\Icons\UI\Hacking\utilTileBase.png" />
+    <Content Include="Assets\Icons\UI\Hacking\utilTileMouseDown.png" />
+    <Content Include="Assets\Icons\UI\Hacking\utilTileMouseHover.png" />
+    <Content Include="Assets\Icons\UI\Hacking\virus.png" />
+    <Content Include="Assets\Icons\UI\Industry\basic.png" />
+    <Content Include="Assets\Icons\UI\Industry\component.png" />
+    <Content Include="Assets\Icons\UI\Industry\component32.png" />
+    <Content Include="Assets\Icons\UI\Industry\consumable.png" />
+    <Content Include="Assets\Icons\UI\Industry\consumable32.png" />
+    <Content Include="Assets\Icons\UI\Industry\copying.png" />
+    <Content Include="Assets\Icons\UI\Industry\equipment.png" />
+    <Content Include="Assets\Icons\UI\Industry\equipment32.png" />
+    <Content Include="Assets\Icons\UI\Industry\groupComponents.png" />
+    <Content Include="Assets\Icons\UI\Industry\groupDatacores.png" />
+    <Content Include="Assets\Icons\UI\Industry\groupDataInterfaces.png" />
+    <Content Include="Assets\Icons\UI\Industry\groupDecryptors.png" />
+    <Content Include="Assets\Icons\UI\Industry\groupItems.png" />
+    <Content Include="Assets\Icons\UI\Industry\groupMineral.png" />
+    <Content Include="Assets\Icons\UI\Industry\groupPlantaryMaterials.png" />
+    <Content Include="Assets\Icons\UI\Industry\groupReactionMaterials.png" />
+    <Content Include="Assets\Icons\UI\Industry\groupRefinedMaterials.png" />
+    <Content Include="Assets\Icons\UI\Industry\groupSalavageMaterials.png" />
+    <Content Include="Assets\Icons\UI\Industry\iconME.png" />
+    <Content Include="Assets\Icons\UI\Industry\iconTE.png" />
+    <Content Include="Assets\Icons\UI\Industry\invention.png" />
+    <Content Include="Assets\Icons\UI\Industry\manufacturing.png" />
+    <Content Include="Assets\Icons\UI\Industry\mobile.png" />
+    <Content Include="Assets\Icons\UI\Industry\mobile32.png" />
+    <Content Include="Assets\Icons\UI\Industry\reaction.png" />
+    <Content Include="Assets\Icons\UI\Industry\researchMaterial.png" />
+    <Content Include="Assets\Icons\UI\Industry\researchTime.png" />
+    <Content Include="Assets\Icons\UI\Industry\ship.png" />
+    <Content Include="Assets\Icons\UI\Industry\ship32.png" />
+    <Content Include="Assets\Icons\UI\Industry\structure.png" />
+    <Content Include="Assets\Icons\UI\Industry\structure32.png" />
+    <Content Include="Assets\Icons\UI\InfoPanels\activityTracker.png" />
+    <Content Include="Assets\Icons\UI\InfoPanels\auraTips.png" />
+    <Content Include="Assets\Icons\UI\InfoPanels\check.png" />
+    <Content Include="Assets\Icons\UI\InfoPanels\daily_opportunities.png" />
+    <Content Include="Assets\Icons\UI\InfoPanels\FactionalWarfare.png" />
+    <Content Include="Assets\Icons\UI\InfoPanels\inRetreat.png" />
+    <Content Include="Assets\Icons\UI\InfoPanels\LocationInfo.png" />
+    <Content Include="Assets\Icons\UI\InfoPanels\lock.png" />
+    <Content Include="Assets\Icons\UI\InfoPanels\Missions.png" />
+    <Content Include="Assets\Icons\UI\InfoPanels\Notifications.png" />
+    <Content Include="Assets\Icons\UI\InfoPanels\operationscenterIcon.png" />
+    <Content Include="Assets\Icons\UI\InfoPanels\operationsIcon_Main.png" />
+    <Content Include="Assets\Icons\UI\InfoPanels\opportunitiesCheck.png" />
+    <Content Include="Assets\Icons\UI\InfoPanels\opportunitiesCriteriaRowBack.png" />
+    <Content Include="Assets\Icons\UI\InfoPanels\opportunitiesFillBar.png" />
+    <Content Include="Assets\Icons\UI\InfoPanels\opportunitiesFillBox.png" />
+    <Content Include="Assets\Icons\UI\InfoPanels\opportunitiesIcon_Combat.png" />
+    <Content Include="Assets\Icons\UI\InfoPanels\opportunitiesIcon_Explore.png" />
+    <Content Include="Assets\Icons\UI\InfoPanels\opportunitiesIcon_Market.png" />
+    <Content Include="Assets\Icons\UI\InfoPanels\opportunitiesIcon_Mining.png" />
+    <Content Include="Assets\Icons\UI\InfoPanels\opportunitiesIcon_Missions.png" />
+    <Content Include="Assets\Icons\UI\InfoPanels\opportunitiesIcon_Skills.png" />
+    <Content Include="Assets\Icons\UI\InfoPanels\opportunitiesIncompleteBox.png" />
+    <Content Include="Assets\Icons\UI\InfoPanels\opportunitiesPanelIcon.png" />
+    <Content Include="Assets\Icons\UI\InfoPanels\opportunitiesReturnArrow.png" />
+    <Content Include="Assets\Icons\UI\InfoPanels\opportunitiesTreeIcon.png" />
+    <Content Include="Assets\Icons\UI\InfoPanels\outriftDetected.png" />
+    <Content Include="Assets\Icons\UI\InfoPanels\PlanetaryInteraction.png" />
+    <Content Include="Assets\Icons\UI\InfoPanels\quitOperation_Icon.png" />
+    <Content Include="Assets\Icons\UI\InfoPanels\Route.png" />
+    <Content Include="Assets\Icons\UI\InfoPanels\scoutsReported.png" />
+    <Content Include="Assets\Icons\UI\InfoPanels\search.png" />
+    <Content Include="Assets\Icons\UI\InfoPanels\shipTree.png" />
+    <Content Include="Assets\Icons\UI\InfoPanels\taleDefaultIcon.png" />
+    <Content Include="Assets\Icons\UI\InfoPanels\taleIncursionDriftersHeavy.png" />
+    <Content Include="Assets\Icons\UI\InfoPanels\taleIncursionDriftersLight.png" />
+    <Content Include="Assets\Icons\UI\InfoPanels\taleIncursionDriftersMedium.png" />
+    <Content Include="Assets\Icons\UI\InfoPanels\taleIncursionDriftersStaging.png" />
+    <Content Include="Assets\Icons\UI\InfoPanels\taleIncursionHeavyInfestation.png" />
+    <Content Include="Assets\Icons\UI\InfoPanels\taleIncursionLightInfestation.png" />
+    <Content Include="Assets\Icons\UI\InfoPanels\taleIncursionMediumInfestation.png" />
+    <Content Include="Assets\Icons\UI\InfoPanels\taleIncursionSanshaHeavy.png" />
+    <Content Include="Assets\Icons\UI\InfoPanels\taleIncursionSanshaLight.png" />
+    <Content Include="Assets\Icons\UI\InfoPanels\taleIncursionSanshaMedium.png" />
+    <Content Include="Assets\Icons\UI\InfoPanels\taleIncursionSanshaStaging.png" />
+    <Content Include="Assets\Icons\UI\InfoPanels\worldArkDetected.png" />
+    <Content Include="Assets\Icons\UI\Isis\amarr.png" />
+    <Content Include="Assets\Icons\UI\Isis\angel.png" />
+    <Content Include="Assets\Icons\UI\Isis\armor.png" />
+    <Content Include="Assets\Icons\UI\Isis\attack.png" />
+    <Content Include="Assets\Icons\UI\Isis\battleCruiser.png" />
+    <Content Include="Assets\Icons\UI\Isis\battlecruiser_64.png" />
+    <Content Include="Assets\Icons\UI\Isis\battleship.png" />
+    <Content Include="Assets\Icons\UI\Isis\battleship_64.png" />
+    <Content Include="Assets\Icons\UI\Isis\bloodRaiders.png" />
+    <Content Include="Assets\Icons\UI\Isis\bloodRaiders.zh.png" />
+    <Content Include="Assets\Icons\UI\Isis\caldari.png" />
+    <Content Include="Assets\Icons\UI\Isis\capital.png" />
+    <Content Include="Assets\Icons\UI\Isis\capital_64.png" />
+    <Content Include="Assets\Icons\UI\Isis\capsule.png" />
+    <Content Include="Assets\Icons\UI\Isis\capsule_64.png" />
+    <Content Include="Assets\Icons\UI\Isis\combat.png" />
+    <Content Include="Assets\Icons\UI\Isis\cruiser.png" />
+    <Content Include="Assets\Icons\UI\Isis\cruiser_64.png" />
+    <Content Include="Assets\Icons\UI\Isis\destroyer.png" />
+    <Content Include="Assets\Icons\UI\Isis\destroyer_64.png" />
+    <Content Include="Assets\Icons\UI\Isis\disruption.png" />
+    <Content Include="Assets\Icons\UI\Isis\drones.png" />
+    <Content Include="Assets\Icons\UI\Isis\ECM.png" />
+    <Content Include="Assets\Icons\UI\Isis\energyDestabilization.png" />
+    <Content Include="Assets\Icons\UI\Isis\energyTurrets.png" />
+    <Content Include="Assets\Icons\UI\Isis\exploration.png" />
+    <Content Include="Assets\Icons\UI\Isis\freighter.png" />
+    <Content Include="Assets\Icons\UI\Isis\freighter_64.png" />
+    <Content Include="Assets\Icons\UI\Isis\frigate.png" />
+    <Content Include="Assets\Icons\UI\Isis\frigate_64.png" />
+    <Content Include="Assets\Icons\UI\Isis\gallente.png" />
+    <Content Include="Assets\Icons\UI\Isis\guristas.png" />
+    <Content Include="Assets\Icons\UI\Isis\guristas.zh.png" />
+    <Content Include="Assets\Icons\UI\Isis\hauling.png" />
+    <Content Include="Assets\Icons\UI\Isis\hybridTurrets.png" />
+    <Content Include="Assets\Icons\UI\Isis\industrial.png" />
+    <Content Include="Assets\Icons\UI\Isis\industrialCommand.png" />
+    <Content Include="Assets\Icons\UI\Isis\industrialCommand_64.png" />
+    <Content Include="Assets\Icons\UI\Isis\industrial_64.png" />
+    <Content Include="Assets\Icons\UI\Isis\large.png" />
+    <Content Include="Assets\Icons\UI\Isis\medium.png" />
+    <Content Include="Assets\Icons\UI\Isis\miningBarge.png" />
+    <Content Include="Assets\Icons\UI\Isis\miningBarge_64.png" />
+    <Content Include="Assets\Icons\UI\Isis\miningFrigate.png" />
+    <Content Include="Assets\Icons\UI\Isis\miningFrigate_64.png" />
+    <Content Include="Assets\Icons\UI\Isis\minmatar.png" />
+    <Content Include="Assets\Icons\UI\Isis\missiles.png" />
+    <Content Include="Assets\Icons\UI\Isis\mordus.png" />
+    <Content Include="Assets\Icons\UI\Isis\ORE.png" />
+    <Content Include="Assets\Icons\UI\Isis\precursor.PNG" />
+    <Content Include="Assets\Icons\UI\Isis\projectileTurrets.png" />
+    <Content Include="Assets\Icons\UI\Isis\resourceHarvesting.png" />
+    <Content Include="Assets\Icons\UI\Isis\rookie.png" />
+    <Content Include="Assets\Icons\UI\Isis\rookie_64.png" />
+    <Content Include="Assets\Icons\UI\Isis\sansha.png" />
+    <Content Include="Assets\Icons\UI\Isis\sensorDampening.png" />
+    <Content Include="Assets\Icons\UI\Isis\serpentis.png" />
+    <Content Include="Assets\Icons\UI\Isis\shields.png" />
+    <Content Include="Assets\Icons\UI\Isis\shieldsArmor.png" />
+    <Content Include="Assets\Icons\UI\Isis\shuttle.png" />
+    <Content Include="Assets\Icons\UI\Isis\shuttle_64.png" />
+    <Content Include="Assets\Icons\UI\Isis\small.png" />
+    <Content Include="Assets\Icons\UI\Isis\soe.png" />
+    <Content Include="Assets\Icons\UI\Isis\stasisWebifying.png" />
+    <Content Include="Assets\Icons\UI\Isis\superCapital.png" />
+    <Content Include="Assets\Icons\UI\Isis\superCapital_64.png" />
+    <Content Include="Assets\Icons\UI\Isis\superCarrier.png" />
+    <Content Include="Assets\Icons\UI\Isis\superCarrier_64.png" />
+    <Content Include="Assets\Icons\UI\Isis\support.png" />
+    <Content Include="Assets\Icons\UI\Isis\tackling.png" />
+    <Content Include="Assets\Icons\UI\Isis\targetPainting.png" />
+    <Content Include="Assets\Icons\UI\Isis\titan.png" />
+    <Content Include="Assets\Icons\UI\Isis\titan_64.png" />
+    <Content Include="Assets\Icons\UI\Isis\trackingDisruption.png" />
+    <Content Include="Assets\Icons\UI\Isis\triglavianCollective.png" />
+    <Content Include="Assets\Icons\UI\Isis\warpPrevention.png" />
+    <Content Include="Assets\Icons\UI\Isis\xLarge.png" />
+    <Content Include="Assets\Icons\UI\Mastery\mastery0.png" />
+    <Content Include="Assets\Icons\UI\Mastery\mastery1.png" />
+    <Content Include="Assets\Icons\UI\Mastery\mastery2.png" />
+    <Content Include="Assets\Icons\UI\Mastery\mastery3.png" />
+    <Content Include="Assets\Icons\UI\Mastery\mastery4.png" />
+    <Content Include="Assets\Icons\UI\Mastery\mastery5.png" />
+    <Content Include="Assets\Icons\UI\Mastery\masterySmall0.png" />
+    <Content Include="Assets\Icons\UI\Mastery\masterySmall1.png" />
+    <Content Include="Assets\Icons\UI\Mastery\masterySmall2.png" />
+    <Content Include="Assets\Icons\UI\Mastery\masterySmall3.png" />
+    <Content Include="Assets\Icons\UI\Mastery\masterySmall4.png" />
+    <Content Include="Assets\Icons\UI\Mastery\masterySmall5.png" />
+    <Content Include="Assets\Icons\UI\Opportunities\auraAlpha.png" />
+    <Content Include="Assets\Icons\UI\Opportunities\auraAlphaGlow.png" />
+    <Content Include="Assets\Icons\UI\Opportunities\cameraOrbit.png" />
+    <Content Include="Assets\Icons\UI\Opportunities\cameraPan.png" />
+    <Content Include="Assets\Icons\UI\Opportunities\cameraZoom.png" />
+    <Content Include="Assets\Icons\UI\Opportunities\divider_horizontal.png" />
+    <Content Include="Assets\Icons\UI\Opportunities\hexActive.png" />
+    <Content Include="Assets\Icons\UI\Opportunities\hexBack.png" />
+    <Content Include="Assets\Icons\UI\Opportunities\hexBackComplete.png" />
+    <Content Include="Assets\Icons\UI\Opportunities\hexBackIncomplete.png" />
+    <Content Include="Assets\Icons\UI\Opportunities\hexGrid.png" />
+    <Content Include="Assets\Icons\UI\Opportunities\hexPingGlow.png" />
+    <Content Include="Assets\Icons\UI\Opportunities\hexPingMask.png" />
+    <Content Include="Assets\Icons\UI\Opportunities\iconActiveLegend.png" />
+    <Content Include="Assets\Icons\UI\Opportunities\iconComplete.png" />
+    <Content Include="Assets\Icons\UI\Opportunities\iconIncomplete.png" />
+    <Content Include="Assets\Icons\UI\Opportunities\iconIncompleteActive.png" />
+    <Content Include="Assets\Icons\UI\Opportunities\iconPartial.png" />
+    <Content Include="Assets\Icons\UI\Opportunities\iconPartialActive.png" />
+    <Content Include="Assets\Icons\UI\Opportunities\lineGlow.png" />
+    <Content Include="Assets\Icons\UI\Opportunities\mouseBtnLeft.png" />
+    <Content Include="Assets\Icons\UI\Opportunities\mouseBtnMiddle.png" />
+    <Content Include="Assets\Icons\UI\Opportunities\mouseBtnRight.png" />
+    <Content Include="Assets\Icons\UI\Opportunities\pointLeftHeaderBackground.png" />
+    <Content Include="Assets\Icons\UI\Opportunities\pointRightHeaderBackground.png" />
+    <Content Include="Assets\Icons\UI\Opportunities\pointRightHeaderFill.png" />
+    <Content Include="Assets\Icons\UI\Opportunities\pointRightHeaderFrame.png" />
+    <Content Include="Assets\Icons\UI\Opportunities\pointRightHeaderFrameNoFill.png" />
+    <Content Include="Assets\Icons\UI\Opportunities\undockIcon.png" />
+    <Content Include="Assets\Icons\UI\Opportunities\windowFillWithPointer.png" />
+    <Content Include="Assets\Icons\UI\Opportunities\windowFrameWithPointer.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\buttonBody.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\capacitorCell.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\capacitorCellGlow.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\capacitorCell_2.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\expandBtnLeft.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\expandBtnRight.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\fullthrottleBtn.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\gauge1.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\gauge2.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\gauge3.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\gaugeFill.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\heatDivider.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\heatGaugeNeedle.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\hiHeat_0.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\hiHeat_1.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\hiHeat_2.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\hiHeat_3.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\hiHeat_4.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\iconCameraFirstPerson.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\iconCameraGrid.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\iconCameraOrbit.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\iconCameraTracking.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\lootBG.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\lowHeat_0.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\lowHeat_1.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\lowHeat_2.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\lowHeat_3.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\lowHeat_4.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\mainDOT.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\mainDOT_noSpeedo.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\mainUnderlay.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\mainUnderlay_noSpeedo.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\medHeat_0.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\medHeat_1.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\medHeat_2.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\medHeat_3.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\medHeat_4.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\minus.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\optionsBtn.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\overloadBtnHiOff.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\overloadBtnHiOn.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\overloadBtnLoOff.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\overloadBtnLoOn.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\overloadBtnMedOff.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\overloadBtnMedOn.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\plus.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\releaseArrow.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\slotBase.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\slotDamage_1.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\slotDamage_2.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\slotDamage_3.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\slotDamage_4.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\slotDamage_5.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\slotDamage_6.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\slotDamage_7.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\slotDamage_8.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\slotDamage_Base.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\slotGlow.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\slotHilite.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\slotMain.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\slotMainCombined.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\slotMainFull.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\slotOverloadDisabled.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\slotOverloadOff.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\slotOverloadOn.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\slotQuantityUnderlay.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\slotRampLeft.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\slotRampRight.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\slotSolidBackground.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\slotStackUnderlay.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\speedoOverlay.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\speedoUnderlay.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\stopBtn.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\utilBtnBase.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\utilBtnBaseAndShadow.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\utilBtnGlow.png" />
+    <Content Include="Assets\Icons\UI\ShipUI\utilBtnShadow.png" />
+    <Content Include="Assets\Icons\UI\Skills\doNotHave.png" />
+    <Content Include="Assets\Icons\UI\Skills\doNotHaveFrame.png" />
+    <Content Include="Assets\Icons\UI\Skills\fullyTrained.png" />
+    <Content Include="Assets\Icons\UI\Skills\fullyTrainedFrame.png" />
+    <Content Include="Assets\Icons\UI\Skills\hatchPattern.png" />
+    <Content Include="Assets\Icons\UI\Skills\levelPartiallyTrained.png" />
+    <Content Include="Assets\Icons\UI\Skills\levelPartiallyTrainedFrame.png" />
+    <Content Include="Assets\Icons\UI\Skills\levelTrained.png" />
+    <Content Include="Assets\Icons\UI\Skills\levelTrainedFrame.png" />
+    <Content Include="Assets\Icons\UI\Skills\SkillBookNotInjected.png" />
+    <Content Include="Assets\Icons\UI\Skills\SkillRequirementMet.png" />
+    <Content Include="Assets\Icons\UI\Skills\SkillRequirementNotMet.png" />
+    <Content Include="Assets\Icons\UI\Skills\skillTrainingComplete.png" />
+    <Content Include="Assets\Icons\UI\Skills\trial-restricted-16.png" />
+    <Content Include="Assets\Icons\UI\Skills\trialRestrictedFrame.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\1.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\10.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\100.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\102.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\104.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\106.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\107.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\108.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\11.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\112.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\116.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\118.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\119.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\12.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\121.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\123.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\124.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\125.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\126.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\127.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\128.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\129.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\13.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\130.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\132.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\133.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\135.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\136.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\137.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\138.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\139.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\14.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\140.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\141.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\142.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\147.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\148.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\149.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\15.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\150.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\151.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\152.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\153.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\154.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\155.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\157.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\16.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\160.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\164.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\17.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\173.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\174.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\175.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\178.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\179.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\18.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\180.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\181.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\184.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\185.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\186.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\187.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\188.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\189.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\19.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\190.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\191.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\192.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\193.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\194.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\195.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\196.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\197.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\198.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\199.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\2.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\20.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\200.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\201.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\202.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\203.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\204.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\205.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\206.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\207.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\208.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\209.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\21.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\210.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\211.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\212.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\213.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\214.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\215.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\216.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\217.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\218.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\219.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\22.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\220.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\221.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\222.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\223.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\224.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\225.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\226.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\227.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\228.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\229.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\23.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\230.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\231.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\232.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\233.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\234.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\235.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\236.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\2366.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\2367.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\2368.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\237.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\2370.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\2371.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\2372.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\2373.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\2374.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\2375.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\2378.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\2379.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\238.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\2380.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\2381.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\2383.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\239.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\24.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\240.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\241.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\242.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\243.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\244.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\245.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\246.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\247.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\248.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\249.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\25.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\250.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\251.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\252.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\253.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\254.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\255.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\256.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\257.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\258.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\259.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\26.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\260.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\261.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\262.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\263.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\264.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\265.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\266.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\267.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\268.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\27.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\270.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\271.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\272.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\273.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\274.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\275.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\276.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\277.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\278.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\279.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\28.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\280.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\281.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\282.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\283.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\284.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\285.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\286.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\287.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\288.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\289.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\29.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\291.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\292.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\293.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\294.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\295.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\296.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\297.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\298.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\299.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\3.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\30.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\300.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\301.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\302.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\303.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\304.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\305.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\306.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\307.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\308.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\309.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\31.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\310.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\311.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\312.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\313.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\314.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\315.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\316.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\317.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\318.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\319.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\321.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\322.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\323.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\324.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\325.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\326.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\327.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\328.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\329.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\330.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\331.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\332.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\333.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\334.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\335.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\336.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\337.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\338.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\34.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\340.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\341.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\342.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\343.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\345.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\346.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\347.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\348.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\354.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\355.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\356.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\357.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\358.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\359.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\360.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\361.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\362.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\364.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\365.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\38.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\4.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\40.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\41.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\42.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\43.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\5.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\50.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\51.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\52.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\53.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\54.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\55.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\56.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\58.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\59.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\6.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\60.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\67.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\68.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\69.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\7.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\70.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\74.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\8.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\80.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\82.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\83.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\84.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\85.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\87.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\88.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\89.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\9.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\90.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\91.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\92.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\93.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\94.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\96.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\98.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\99.png" />
+    <Content Include="Assets\Icons\UI\SKINIcons\default.png" />
+    <Content Include="Assets\Icons\UI\SKINs\applied.png" />
+    <Content Include="Assets\Icons\UI\SKINs\aur_12.png" />
+    <Content Include="Assets\Icons\UI\SKINs\edgeGlow.png" />
+    <Content Include="Assets\Icons\UI\SKINs\icon-shadow.png" />
+    <Content Include="Assets\Icons\UI\SKINs\isk_12.png" />
+    <Content Include="Assets\Icons\UI\SKINs\labelBackground.png" />
+    <Content Include="Assets\Icons\UI\SKINs\pending.png" />
+    <Content Include="Assets\Icons\UI\SKINs\preview.png" />
+    <Content Include="Assets\Icons\UI\SKINs\previewed.png" />
+    <Content Include="Assets\Icons\UI\SKINs\skin-icon-glow.png" />
+    <Content Include="Assets\Icons\UI\SKINs\skin-icon-hull.png" />
+    <Content Include="Assets\Icons\UI\SKINs\skin-icon-lights.png" />
+    <Content Include="Assets\Icons\UI\SKINs\skin-icon-main.png" />
+    <Content Include="Assets\Icons\UI\SKINs\skin-icon-secondary.png" />
+    <Content Include="Assets\Icons\UI\Tournament\AT_XI_UI_Background.jpg" />
+    <Content Include="Assets\Icons\UI\Tournament\AT_X_UI_Background.png" />
+    <Content Include="Assets\Icons\UI\Tournament\AwesomeBarBlue.png" />
+    <Content Include="Assets\Icons\UI\Tournament\AwesomeBarGreen.png" />
+    <Content Include="Assets\Icons\UI\Tournament\AwesomeBarPurple.png" />
+    <Content Include="Assets\Icons\UI\Tournament\AwesomeBarRed.png" />
+    <Content Include="Assets\Icons\UI\Tournament\Bar_Full.png" />
+    <Content Include="Assets\Icons\UI\Tournament\Block_Back.png" />
+    <Content Include="Assets\Icons\UI\Tournament\Block_Back_Mirror.png" />
+    <Content Include="Assets\Icons\UI\Tournament\Block_Damage.png" />
+    <Content Include="Assets\Icons\UI\Tournament\Block_Damage_Mirror.png" />
+    <Content Include="Assets\Icons\UI\Tournament\Block_Full.png" />
+    <Content Include="Assets\Icons\UI\Tournament\Block_Full_Mirror.png" />
+    <Content Include="Assets\Icons\UI\Tournament\Fancy_NoLogo_UI_Background.png" />
+    <Content Include="Assets\Icons\UI\Tournament\Player_Back.png" />
+    <Content Include="Assets\Icons\UI\Tournament\WC_I_UI_Background.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\abyssalFilament.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\accessGroups.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\achievements.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\activityTracker.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\agent.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\agentfinder.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\aggression.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\alliances.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\assets.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\assetscorp.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\attention.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\attributes.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\augmentations.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\basicServices.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\biography.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\bleedchannel.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\bountyoffice.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\browser.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\browserbookmarks.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\calculator.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\calendar.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\capitalnavigation.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\cargo.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\cargocontainer.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\cargocontainerlocked.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\cargoscan.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\certificates.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\channeloperator.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\charactersheet.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\charcustomization.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\chatchannel.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\chatchannels.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\cloneBay.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\combatlog.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\commandcenterhold.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\comparetool.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\concord.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\contacts.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\container.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\contractauction.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\contractcourier.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\contractitemexchange.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\contracts.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\corpdeliveries.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\corpHangar.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\corpmap.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\corporation.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\corporationdecorations.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\corporationlocations.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\corporationmembers.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\corporationstandings.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\criminal.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\criminal.zh.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\criticalstate.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\decorations.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\directoryActivities.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\directoryIndustry.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\directoryInventory.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\directoryMarket.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\directoryPersonal.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\directoryServices.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\directoryShip.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\directorySocial.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\directoryUtilities.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\docking.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\dogtags.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\dronebay.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\drones.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\employmenthistory.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\evemail.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\evemailcompose.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\evemailtag.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\factionalwarfare.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\fitting.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\fittingManagement.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\fleet.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\Folder.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\folder_cargo.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\forward.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\fuelbay.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\gashold.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\grouplist.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\help.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\hidestatus.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\hidewindows.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\incursions.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\Industry.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\info.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\insider.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\insurance.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\ISIS.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\itemHangar.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\items.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\journal.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\jukebox.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\jumpclones.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\killreport.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\killrights.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\limitedengagement.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\lockedcontainer.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\log.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\lpstore.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\map.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\market.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\marketdeliveries.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\medical.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\member.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\memberdelay.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\mercenary.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\mercenaryadd.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\mercenaryally.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\mercenaryattention.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\mineralhold.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\miningLedger.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\mischold.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\moonDrill.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\moonDrillScheduler.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\mutation.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\mutualwars.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\navigation.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\NES.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\newspost.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\note.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\notegroup.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\notepad.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\offices.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\opportunitiesTree.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\orehold.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\other.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\peopleandplaces.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\personalDeliveries.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\personallocations.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\personalstandings.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\pilotlicense.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\planetarycommodities.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\planets.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\politics.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\projectdiscovery.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\question.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\reactions.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\recruitment.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\redeem.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\repairshop.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\reply.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\replyall.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\Reprocess.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\reprocessing.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\research.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\restriction.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\salvagehold.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\sanctionableactions.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\satellite.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\scopeNetwork.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\searchmarket.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\securitystatus.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\Settings.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\shiphangar.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\ships.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\shipscan.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\skills.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\skins.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\smallfolder.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\sovereignty.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\standings.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\station.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\stationcontainer.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\stationcontainerlocked.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\stop.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\structurebrowser.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\subSystems.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\surrender.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\surrenderattention.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\systems.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\terminate.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\terminate.zh.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\theAgency.PNG" />
+    <Content Include="Assets\Icons\UI\WindowIcons\tipoftheday.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\trainingqueue.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\triglavianRace.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\triglavians.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\tutorial.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\UIHelper.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\votes.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\wallet.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\warning.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\warreport.png" />
+    <Content Include="Assets\Icons\UI\WindowIcons\wars.png" />
+    <Content Include="Properties\Default.rd.xml" />
+    <Content Include="Assets\LockScreenLogo.scale-200.png" />
+    <Content Include="Assets\SplashScreen.scale-200.png" />
+    <Content Include="Assets\Square150x150Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="Assets\StoreLogo.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection">
+      <Version>3.1.7</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
+      <Version>6.2.10</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Toolkit.Uwp">
+      <Version>6.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.UI.Xaml">
+      <Version>2.4.3</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Darla.ESI\Darla.ESI.csproj">
+      <Project>{30624FBE-8F6F-4CB6-9CB6-58357E3EB982}</Project>
+      <Name>Darla.ESI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

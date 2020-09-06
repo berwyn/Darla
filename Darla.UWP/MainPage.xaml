@@ -1,0 +1,34 @@
+﻿<Page
+    x:Class="Darla.UWP.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Darla.UWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
+    xmlns:helpers="using:Darla.UWP.Helpers"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Page.Resources>
+        <ResourceDictionary>
+            <helpers:MenuItemTemplateSelector x:Key="selector">
+                <helpers:MenuItemTemplateSelector.ItemTemplate>
+                    <DataTemplate x:DataType="helpers:Category">
+                        <muxc:NavigationViewItem Content="{x:Bind Name}" ToolTipService.ToolTip="{x:Bind Tooltip}">
+                            <muxc:NavigationViewItem.Icon>
+                                <BitmapIcon UriSource="{x:Bind ResourceUri}" />
+                            </muxc:NavigationViewItem.Icon>
+                        </muxc:NavigationViewItem>
+                    </DataTemplate>
+                </helpers:MenuItemTemplateSelector.ItemTemplate>
+            </helpers:MenuItemTemplateSelector>
+        </ResourceDictionary>
+    </Page.Resources>
+
+    <Grid>
+        <muxc:NavigationView MenuItemsSource="{x:Bind Pages}" MenuItemTemplateSelector="{StaticResource selector}">
+            <Frame x:Name="ContentFrame" />
+        </muxc:NavigationView>
+    </Grid>
+</Page>
